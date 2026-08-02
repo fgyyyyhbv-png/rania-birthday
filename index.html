@@ -1,100 +1,104 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>عيد ميلاد رانيا ❤️</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body{
-margin:0;
-font-family:Tahoma;
-background:linear-gradient(135deg,#ff5fa2,#7d5fff);
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-overflow:hidden;
-color:white;
-text-align:center;
-}
+    <title>🤍 For Rania</title>
 
-.card{
-background:rgba(255,255,255,.15);
-backdrop-filter:blur(10px);
-padding:35px;
-border-radius:25px;
-width:90%;
-max-width:500px;
-box-shadow:0 0 30px rgba(0,0,0,.3);
-animation:fade 1.5s;
-}
+    <link rel="stylesheet" href="style.css">
 
-h1{
-font-size:40px;
-margin-bottom:15px;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-p{
-font-size:22px;
-line-height:1.8;
-}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-button{
-margin-top:20px;
-padding:15px 35px;
-border:none;
-border-radius:50px;
-font-size:20px;
-cursor:pointer;
-background:white;
-color:#ff2d75;
-font-weight:bold;
-}
-
-#msg{
-display:none;
-margin-top:25px;
-font-size:24px;
-animation:fade 1s;
-}
-
-@keyframes fade{
-from{opacity:0;transform:translateY(20px);}
-to{opacity:1;transform:translateY(0);}
-}
-</style>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="card">
+<div id="hearts"></div>
 
-<h1>🎂 كل عام وأنتِ بخير رانيا ❤️</h1>
+<section id="login">
+
+<div class="glass">
+
+<h1>🤍 أهلاً رانيا 🤍</h1>
 
 <p>
-اليوم مو مجرد عيد ميلاد...<br>
-اليوم انولد أجمل إنسانة بحياتي.<br><br>
 
-أتمنى أشوف ضحكتج دوم، وتحققين كل أحلامج،
-وأبقى أول شخص يكولج كل عام وإنتِ بخير. 🌹
+هذا الموقع معمول لشخص واحد فقط...
+
 </p>
 
-<button onclick="showLove()">
-اضغطي هنا 🤍
+<input
+id="name"
+
+placeholder="اكتبي اسمج هنا">
+
+<button onclick="checkName()">
+
+دخول
+
 </button>
 
-<div id="msg">
-أحبج هواي يا رانيا... وكل سنة وأنتِ أقرب إنسانة لقلبي ✨🩶
-</div>
+<p id="wrong"></p>
 
 </div>
 
-<script>
-function showLove(){
-document.getElementById("msg").style.display="block";
-}
-</script>
+</section>
+
+<section id="main">
+
+<div class="glass">
+
+<h1>
+
+🎂 Happy Birthday
+
+<br>
+
+Rania ❤️
+
+</h1>
+
+<div id="countdown">
+
+00 : 00 : 00 : 00
+
+</div>
+
+<button onclick="startStory()">
+
+💌 اضغطي هنا
+
+</button>
+
+<div id="story">
+
+</div>
+
+<button
+
+id="giftBtn"
+
+onclick="gift()">
+
+🎁 عندي مفاجأة
+
+</button>
+
+<div id="giftBox">
+
+</div>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
