@@ -1,21 +1,19 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>For Rania ❤️</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+<!doctype html><html lang="ar" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday Rania</title>
 <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="card">
-<h1>🤍 إلى رانيا 🤍</h1>
-<div id="countdown"></div>
-<button onclick="showMessage()">💌 اضغطي هنا</button>
-<p id="msg"></p>
+</head><body>
+<div id="login" class="card">
+<h1>🤍 أهلاً رانيا 🤍</h1>
+<p>اكتبي اسمج حتى تفتح المفاجأة</p>
+<input id="name" placeholder="الاسم">
+<button onclick="checkName()">دخول</button>
+<p id="wrong"></p>
 </div>
-<script src="script.js"></script>
-</body>
-</html>
+<div id="main" class="card" style="display:none">
+<h1>🎂 كل عام وانتي بخير رانيا</h1>
+<div id="count"></div>
+<button onclick="showMsg()">💌 افتحي الرسالة</button>
+<pre id="msg"></pre>
+</div>
+<script src="script.js"></script></body></html>
