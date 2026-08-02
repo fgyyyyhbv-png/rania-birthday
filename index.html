@@ -1,19 +1,53 @@
-<!doctype html><html lang="ar" dir="rtl"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Happy Birthday Rania</title>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💜 For Rania</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-</head><body>
-<div id="login" class="card">
-<h1>🤍 أهلاً رانيا 🤍</h1>
-<p>اكتبي اسمج حتى تفتح المفاجأة</p>
-<input id="name" placeholder="الاسم">
-<button onclick="checkName()">دخول</button>
-<p id="wrong"></p>
+</head>
+<body>
+
+<div class="background"></div>
+<div id="hearts"></div>
+
+<main class="container">
+<section class="glass">
+
+<div class="version">✨ بواسطة مصطفى ✨</div>
+
+<h1 class="title">❤️ إلى رانيا ❤️</h1>
+
+<p class="subtitle">
+<strong>مو كل الهدايا تكون بصندوق... 🎁</strong><br><br>
+
+بعضها يكون عبارة عن لحظة، وذكرى، وكلمات من القلب. 🤍<br><br>
+
+أتمنى هاي المفاجأة ترسم ابتسامة على وجهج،
+وتبقى ذكرى حلوة كل ما ترجعين إلها. ✨
+</p>
+
+<button id="startBtn">💖 ابدئي المفاجأة</button>
+
+<section id="content" class="hidden">
+<h2>💌 رسالة خاصة</h2>
+<p id="typingText"></p>
+<div id="countdown"></div>
+<button id="gift">🎁 افتحي الهدية</button>
+
+<div id="giftPopup" class="hidden">
+  <div class="popup-content"></div>
 </div>
-<div id="main" class="card" style="display:none">
-<h1>🎂 كل عام وانتي بخير رانيا</h1>
-<div id="count"></div>
-<button onclick="showMsg()">💌 افتحي الرسالة</button>
-<pre id="msg"></pre>
-</div>
-<script src="script.js"></script></body></html>
+
+</section>
+
+</section>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
